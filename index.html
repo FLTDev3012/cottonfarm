@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condamine Park</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+
+<body>
+
+
+
+            <!--    ================================
+                    ================================
+                        Header  //  l'entete
+                    ================================
+                    ================================  -->
+
+
+    <header class="header">                                                                                                     <!--  L element qui englobe tout le header  -->
+        
+        
+        <div class="topbar">                                                                                                    <!--  div de la topbar //  div car aucun sens sementique  -->
+            
+            
+            <div class="logo">                                                                                                  <!--  partie gauche logo  -->
+                <a href="/index.html">Condamine Park</a>                                                                             <!-- Lien avec nom du restaurant -->
+            </div>
+            
+            
+            
+            <nav class="menu">                                                                                                  <!--  a droite du logo la navigation //class "menu"  -->
+                <a href="/travail.html" class="menu-item">The work</a>
+                <a href="/logement.html" class="menu-item">The accommodation</a>
+                <a href="#about" class="menu-item">About</a>
+                <a href="#footer" class="menu-item">Contact</a>
+                                                         
+            </nav>
+            
+            
+        </div>
+
+
+        <div class="baseline">                                                                                                  <!-- Slogan text du milieu -->
+            <span class="baseline-welcome"> </span> 
+            <strong class="baseline-name"> </strong> 
+            <span class="baseline-slogan"> </span>                                                     <!-- Entre span et strong il  y a un espace qui ne se voit pas car j ai mis a la ligne -->
+        </div>
+
+
+
+
+    </header> 
+
+
+
+
+
+            <!--    ================================
+                    ================================
+                        Discovery  //  Découvrir
+                    ================================
+                    ================================  -->
+
+
+
+    <section class="home-section">
+
+
+
+        <div class="container-small">
+
+
+
+            <div class="block  block-left">
+
+                <div class="block-img">
+                    <img src="img/taff2.jpg" alt="mojo">
+                </div>
+
+                <div class="block-body">
+                    <h2 class="title"><span>Discovery</span> the work</h2>
+                    <p>A basic working day on the farm begins at 8 a.m. and ends between 5 p.m. and 8 p.m. There are two types of days, picking days and non-picking days...</p>
+                    
+                    <div class="more">
+                        <a href="travail.html">See more</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="block  block-right">
+
+                <div class="block-img">
+                    <img src="img/imgtaff.jpg" alt="imageDetaff">
+                </div>
+
+                <div class="block-body">
+                    <h2 class="title"><span>Discovery</span> the accommodation</h2>
+                    <p>Our farm offers accommodation in the heart of our farm...</p>
+                    <div class="more">
+                        <a href="logement.html">See more</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="block  block-centered block-last" id="about">
+                
+                <div class="block-body">
+                    <h2 class="title"><span>About</span> Who we are?</h2>
+                    <p>
+                        Condamine Park is a family farm located at 3 hours drive from Brisbane. Leah's road just out of Dalby... We grow and harvest our own cotton throughout the year. We are looking for motivated people to join our team, and take control of our module builders, and turn cotton into strong module s.
+                    </p>
+                </div>
+
+            </div>
+
+            
+
+
+            
+
+
+        </div>
+
+
+
+
+
+        
+
+
+
+    </section>
+
+
+
+
+          
+
+
+
+
+    
+    
+    
+
+
+    
+
+    <div class="map" id="map"></div>
+
+    <footer class="footer" id="footer">
+
+        <div class="container">
+
+
+
+
+            <div class="footer-columns">
+
+
+
+                <div class="footer-column">
+                    <div class="footer-title"><a href="index.html">CONDAMINE PARK</a></div>
+                    <p>
+                        Wesley Back Family Trust
+                    </p>
+                </div>
+
+                
+
+                <div class="footer-column">
+                    <div class="footer-title">Contact info</div>
+                    <p>
+                        381 Leahys Road RANGES BRIDGE, Dalby QLD 4405<br>
+                        +61 427 635 500<br>
+                        <a href="mailto:cheryllback2@bigpond.com">cheryllback2@bigpond.com</a>
+                    </p>
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-credits">
+                <span>2022 CONDAMINE PARK</span>. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(-27.164110656848457, 151.3291081370069), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"all","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative.country","elementType":"labels.text.fill","stylers":[{"color":"#e5c163"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#c4c4c4"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#e5c163"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21},{"visibility":"on"}]},{"featureType":"poi.business","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#e5c163"},{"lightness":"0"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"color":"#e5c163"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#575757"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.text.stroke","stylers":[{"color":"#2c2c2c"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#999999"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(50.455817, 1.613406),
+                    map: map,
+                    title: 'The Farm!'
+                });
+            }
+        </script>
+
+</body>
+
+
+
+</html>
